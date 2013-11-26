@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+<link href="css/general.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="container">
+        <div id="contact-form" class="clearfix">
+            <p>Fill out our form today if you want to be part of our club. <p>
+          
+		  	<h3>Book Club Application</h3>
+			
+			
+                <label for="name">Name: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required autofocus />
+                
+                <label for="email">Email Address: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="johndoe@example.com" required />
+				
+				<label for="address">Address: <span class="required">*</span></label>
+                <input type="address" id="addrress" name="address" placeholder="27 Example Dr." required />
+				
+				<label for="city">City: <span class="required">*</span></label>
+                <input type="city" id="city" name="city" placeholder="ex: Ottawa, New York" required />
+					
+				<label for="Province">Province: <span class="required">*</span></label>
+                <input type="province" id="province" name="province" placeholder="ex: Ontario, Alberta" required />
+				
+				<label for="Postal Code">Postal Code: <span class="required">*</span></label>
+                <input type="postalcode" id="postalcode" max="7" name="postalcode" placeholder="Postal Code" required />
+                
+               <br> <label for="telephone">Telephone: </label>
+                <input type="tel" id="telephone" name="telephone" placeholder="(613)xxx-xxx" />
+                
+               <br> <label for="enquiry">What time of day would be best to meet? </label>
+                <select id="enquiry" name="enquiry">
+				
+                   
+				    <option value="time" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['enquiry'] == 'General') ? "selected='selected'" : '' ?>11 a.m</option>
+                    
+					<option value="time" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['enquiry'] == 'Sales') ? "selected='selected'" : '' ?>3 p.m</option>
+                   
+				    <option value="time" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['enquiry'] == 'Support') ? "selected='selected'" : '' ?>4 p.m</option>  
+					
+					  <option value="time" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['enquiry'] == 'Support') ? "selected='selected'" : '' ?>6 p.m</option>  
+					
+					 </select>
+							  
+					 <label for="numbers">How many books have you read this year?</label>
+					<input type="number" id="number" pattern="[0-9]*" min="1" max="130">
+           
+                
+               <label for="message">Describe your favourite book & autho <span class="required">*</span></label>
+               <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required data-minlength="20"></textarea>
+
+<div>			   
+ <fieldset>
+  	<legend>How much do you love this genre?</legend>
+	
+	<input type="radio" id="extreme-poor" name="satisfaction">
+	<label for="extreme-poor">Extremely dissatisfied </label>
+	
+	<input type= "radio" id="dissatisfied" name="satisfaction">
+	<label for="extreme-poor"> dissatisfied </label>
+	
+		<input type= "radio" id="nutral" name="satisfaction">
+	<label for="neutral"> neutral </label>
+
+		<input type="radio" id="satisfied" name="satisfaction">
+	<label for="satisfied"> Satisfied </label>
+  </fieldset>
+  
+  <div>
+
+                <span id="loading"></span>
+                <input type="submit" value="Holla!" id="submit-button" />
+                <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+            </form>
+		
+        </div>
+    </div>
+	</div>	
+		</div>
+		
+
+
+
+
+
+
+
+
+
+</body>
+</html>

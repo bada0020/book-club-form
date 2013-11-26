@@ -1,0 +1,128 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+
+body {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.428571429;
+color: #333333;
+}
+
+
+
+/* CONTACT FORM ------------------------------------------------------------*/
+
+#contact-form {
+	width:465px;
+	padding:0;
+	margin: 0 auto;	
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	position:relative;
+}
+
+#contact-form h1 {
+	font-size:42px;
+}
+
+#contact-form h2 {
+	margin-bottom:15px;
+	font-style:italic;
+	font-weight:normal;
+}
+
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea, 
+#contact-form label {
+	font-size:15px;
+	margin-bottom:2px;
+}
+
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+	width:450px;
+	border: 1px solid #CEE1E8;
+	margin-bottom:20px;
+	padding:4px;
+}
+
+#contact-form input:focus, 
+#contact-form select:focus, 
+#contact-form textarea:focus {
+	border: 1px solid #AFCDD8;
+	background-color: #EBF2F4;
+}
+
+#contact-form textarea {
+	height:150px;
+	resize: none;
+}
+
+#contact-form label {
+	display:block;
+}
+
+#contact-form .required {
+	font-weight:bold;
+	color:#F00;	
+}
+
+#contact-form #submit-button {
+	width: 100px;
+	color:#FFF;
+	border:none;
+	display:block;
+	float:right;
+	margin-bottom:0px;
+	margin-right:6px;
+	background-color: #ed805f;
+	-moz-border-radius:8px;
+}
+
+#contact-form #submit-button:hover {
+	background-color: #A6CFDD;
+}
+
+#contact-form #submit-button:active {
+	position:relative;
+	top:1px;
+}
+
+#contact-form #loading {
+	width:32px;
+	height:32px;
+	display:block;
+	position:absolute;
+	right:130px;
+	bottom:16px;
+	display:none;
+}
+
+.first-form{
+	margin:3em;
+}
+
+fieldset {
+         width:auto; 
+		  color:black;
+		  border: 1px solid #CEE1E8;
+         border-radius:5px;
+		  padding:0;
+}
+
+
+legend   {
+          color:black;
+          opacity:0.6;
+          border: 1px solid thin;
+          padding: 10px 20px;
+          text-align:left;
+          border-radius:5px;
+}
