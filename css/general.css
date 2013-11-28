@@ -8,7 +8,7 @@
 body {
 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 14px;
-line-height: 1.428571429;
+line-height: 1.42;
 color: #333;
 
 }
@@ -17,10 +17,6 @@ input{
 	font-size:1rem;
 }
 
-input[type="radio"]
-input[type="checkbox"]{
-	cursor:pointer;
-}
 
 #contact-form {
 	width:465px;
@@ -47,7 +43,6 @@ input[type="checkbox"]{
 #contact-form textarea, 
 #contact-form label {
 	font-size:15px;
-	margin-bottom:2px;
 }
 
 #contact-form input, 
@@ -86,7 +81,6 @@ input[type="checkbox"]{
 	border:none;
 	display:block;
 	float:right;
-	margin-bottom:0px;
 	margin-right:6px;
 	background-color: #ed805f;
 	-moz-border-radius:8px;
@@ -111,6 +105,11 @@ input[type="checkbox"]{
 	display:none;
 }
 
+
+#contact-form #loading {
+	
+}
+
 .first-form{
 	margin:3em;
 }
@@ -131,4 +130,19 @@ legend   {
           padding: 10px 20px;
           text-align:left;
           border-radius:5px;
+}
+
+
+#contact-form input[type="radio"],
+#contact-form input[type="checkbox"]{
+	cursor:pointer;
+	display: inline-block;
+	width:auto;
+}
+
+#contact-form input[type="radio"]+label,
+#contact-form input[type="checkbox"]+label{
+	cursor:pointer;
+	display: inline-block;
+	width:auto;
 }
